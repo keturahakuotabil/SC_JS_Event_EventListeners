@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Day 6: Event Listeners </title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://kit.fontawesome.com/acc40c9880.js" crossorigin="anonymous"></script> 
+    <!-- Remove my embeded kit and embed your Font Awesome kit link here to use the lightbulb icon in the demo section. -->
+</head>
+<body>
+
+    <div class="demo-box">
+        <h1>Day 6: Web Interactivity</h1>
+        <p id="message-display">Perform an action to see a response...</p>
+
+        <!-- SECTION A: Targets for Modern JavaScript addEventListener (Task 3 & 4) -->
+        <div class="interactive-section">
+            <h3>Modern JS Listeners</h3>
+            <button id="click-btn">Click Me!</button>
+            <div id="hover-zone">Hover Over Me!</div>
+            <input type="text" id="key-input" placeholder="Type something here...">
+        </div>
+
+        <!-- SECTION B: Interactive Image Demo (Task 6) -->
+        <div class="image-section">
+            <h3>Image Interaction</h3>
+            <!-- Bulb icon illustration from Font Awesome -->
+            <i id="bulb-icon" class="fa-regular fa-lightbulb"></i>
+        </div>
+
+        <!-- SECTION C: Targets for Inline HTML Attributes (Task 5) -->
+        <div class="inline-section">
+            <h3>Inline HTML Attributes</h3>
+            <button onclick="handleInlineClick()">Inline Click</button>
+            <div onmouseenter="handleInlineHover()" class="inline-zone">Inline Hover</div>
+        </div>
+    </div>
+
+    <script src="src/event.js"></script>
+</body>
+</html>
